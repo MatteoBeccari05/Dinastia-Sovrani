@@ -1,0 +1,1 @@
+Realizzare lo schema e/r (draw.io) e lo schema logico (DBeaver) dei sovrani di Utopia; ogni scovrano è caratterizzato dal nome, dalle date di inizio e fine regno,dalla sua immagine,dal nome del predecessore e da quello del successore. Creare quindi un'applicazione web per inserire i sovrani e visualizzare la dinastia dei sovrani.
