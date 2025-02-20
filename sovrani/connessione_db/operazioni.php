@@ -15,7 +15,6 @@ function inserimento($nome, $data_inizio, $data_fine, $img, $predecessore, $succ
     {
         if ($nome != null && $img != null)
         {
-
             if($predecessore === "")
             {
                 $predecessore = null;
@@ -32,8 +31,6 @@ function inserimento($nome, $data_inizio, $data_fine, $img, $predecessore, $succ
             $stm->bindValue(':Predecessore', $predecessore);
             $stm->bindValue(':Successore', $successore);
 
-
-
             if ($stm->execute())
             {
                 $stm->closeCursor();  // chiudo la connessione
@@ -49,7 +46,6 @@ function inserimento($nome, $data_inizio, $data_fine, $img, $predecessore, $succ
             header('Location:../redirect/error.html');  //per non avere problemi di scrittura doppia
             throw new PDOException("Controlla i dati inseriti");  // sollevo l'eccezione
         }
-
     }
     catch (Exception $eccezione)
     {
@@ -58,16 +54,14 @@ function inserimento($nome, $data_inizio, $data_fine, $img, $predecessore, $succ
 }
 
 
-
-
 function ritorno_sovrani()
 {
     global $db;
     try
     {
         // Esegui la query per recuperare i sovrani
-        $sql = "SELECT ID, Nome FROM Sovrani";
-        $stmt = $db->query($sql);
+        $query = "SELECT ID, Nome FROM Sovrani";
+        $stmt = $db->query($query);
 
         // Variabile per contenere le opzioni HTML
         $options = '';
@@ -138,9 +132,5 @@ function visualizza()
     }
 
 }
-
-
-
-
 ?>
 

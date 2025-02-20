@@ -1,6 +1,6 @@
 <?php
 require_once '../strutture_pagina/functions_active_navbar.php';
-$content = "Visualizza";
+$content = "Visualizza Sovrani";
 require_once "../connessione_db/operazioni.php";
 require '../strutture_pagina/navbar.php';
 

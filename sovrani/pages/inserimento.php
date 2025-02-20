@@ -1,5 +1,5 @@
 <?php
-$content = 'Inserimento';
+$content = 'Inserimento Sovrano ';
 require_once '../strutture_pagina/functions_active_navbar.php';
 require '../strutture_pagina/navbar.php';
 require_once '../connessione_db/operazioni.php';
